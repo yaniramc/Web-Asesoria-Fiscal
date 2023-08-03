@@ -1,0 +1,151 @@
+/* Base de colores de la pagina
+
+color: #38B6FF;
+
+footer:
+
+color: #2C3E50;
+
+ */
+
+
+.principal-banner {
+    background-image: url('../img/principal-banner.jpg');
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.principal-title {
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+    position: relative;
+    top: 200px;
+    color: black;
+    text-shadow: 1px 1px #808B96;
+    font-size: 50px;
+}
+
+.subtitle {
+    font-size: 30px;
+}
+
+
+/* Linea de separación con el icono del banco entre medias */
+.hr-droid {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hr-line {
+    width: 10%;
+    position: relative;
+    margin: 10px;
+    border-bottom: 2px solid;
+}
+
+.left-line {
+    border-color: #38B6FF;
+}
+
+.right-line {
+    border-color: #38B6FF;
+}
+
+
+/* Color de los enlaces de cada servicio */
+.link-services {
+    color: black;
+    text-decoration: none;
+}
+.link-services:hover {
+    color: #38B6FF;
+}
+
+
+/* CSS de los banners de las distintas páginas con el título por encima de la imagen */
+.fiscal-banner {
+    background-image: url('../img/img-fiscal.jpg');
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(60%);
+}
+
+.contable-banner {
+    background-image: url('../img/img-contable.jpg');
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(60%);
+}
+
+.laboral-banner {
+    background-image: url('../img/img-laboral.jpg');
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(60%);
+}
+
+.juridica-banner {
+    background-image: url('../img/img-juridica.jpg');
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(60%);
+}
+
+/* Título de los distintios banners */
+.title-service {
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: white;
+    text-shadow: 1px 1px #283747;
+    font-size: 50px;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+}
+
+.link-services-footer {
+    color: white;
+    text-decoration: none;
+}
+.link-services-footer:hover {
+    color: #38B6FF;
+}
+
+
+.footer2 {
+    background-color: #212F3D;
+    color: grey;
+}
+
+
+/* Título en azul de las páginas de cada servicio */
+.color-title-service {
+    color: #38B6FF;
+}
+
+
+.section-contact {
+    background-color: #2C3E50;
+}

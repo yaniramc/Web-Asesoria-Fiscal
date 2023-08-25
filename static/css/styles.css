@@ -8,144 +8,518 @@ color: #2C3E50;
 
  */
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .principal-banner {
-    background-image: url('../img/principal-banner.jpg');
-    height: 500px;
-    background-position: center;
+    background-image: url('../img/principal-banner2.jpg');
+    height: 864px;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.principal-title {
-    margin: auto;
-    width: 95%;
-    padding: 10px;
-    position: relative;
-    top: 200px;
-    color: black;
-    text-shadow: 1px 1px #808B96;
-    font-size: 50px;
-}
 
-.subtitle {
-    font-size: 30px;
-}
-
-
-/* Linea de separación con el icono del banco entre medias */
-.hr-droid {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.hr-line {
-    width: 10%;
-    position: relative;
-    margin: 10px;
-    border-bottom: 2px solid;
-}
-
-.left-line {
-    border-color: #38B6FF;
-}
-
-.right-line {
-    border-color: #38B6FF;
-}
-
-
-/* Color de los enlaces de cada servicio */
-.link-services {
-    color: black;
-    text-decoration: none;
-}
-.link-services:hover {
-    color: #38B6FF;
-}
-
-
-/* CSS de los banners de las distintas páginas con el título por encima de la imagen */
-.fiscal-banner {
-    background-image: url('../img/img-fiscal.jpg');
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(60%);
-}
-
-.contable-banner {
-    background-image: url('../img/img-contable.jpg');
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(60%);
-}
-
-.laboral-banner {
-    background-image: url('../img/img-laboral.jpg');
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(60%);
-}
-
-.juridica-banner {
-    background-image: url('../img/img-juridica.jpg');
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(60%);
-}
-
-/* Título de los distintios banners */
-.title-service {
+/* Estilos de títulos de la página */
+.principal-titles {
     margin: auto;
     width: 95%;
     padding: 10px;
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 450px;
+    left: 50px;
+    text-align: center;
     color: white;
-    text-shadow: 1px 1px #283747;
-    font-size: 50px;
+    text-shadow: 1px 1px #808B96;
+    font-size: 75px;
+    line-height: 85px;
+    transition: all .25s ease-out;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blue-banner-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 2.1px;
+    color: #0258fc;
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transition: all .25s ease-out;
+    overflow-wrap: inherit;
+    margin-bottom: 0.4em;
+    margin-top: 0.2em;
+    text-rendering: optimizeSpeed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.generic-blue-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 1.5px;
+    color: #2a46fe;
+    margin: 0 0 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-title {
+    font-size: 43px;
+    line-height: 50px;
+    color: #171c24;
+    margin: 0 0 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-title-prices {
+    font-size: 43px;
+    line-height: 50px;
+    color: white;
+    margin: 0 0 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Divisor */
+.aux-modern-heading-divider-center {
+    height: 3px;
+    width: 70px;
+    background-color: transparent;
+    box-shadow: 3px 3px 6px 0 #026cfc;
+    background-image: linear-gradient(268deg, #24a7ff 0%, #2a46fe 100%);
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transition: all .25s ease-out;
+    display: block;
+    --widgets-spacing: 20px;
+}
+
+/* Divisor */
+.aux-modern-heading-divider-start {
+    height: 3px;
+    width: 70px;
+    background-color: transparent;
+    box-shadow: 3px 3px 6px 0 #026cfc;
+    background-image: linear-gradient(268deg, #24a7ff 0%, #2a46fe 100%);
+    text-align: start;
+    transition: all .25s ease-out;
+    display: block;
+    --widgets-spacing: 20px;
+}
+
+/* Botones */
+.primary-button {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #24a7ff 0%, #2a46fe 100%);
+    box-shadow: 6px 8px 30px 0 rgba(0, 84, 252, .65);
+    text-shadow: 0 0 0 transparent;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px 35px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 100px;
+    display: inline-block;
+    position: relative;
+    line-height: 100%;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .45s;
+    vertical-align: middle;
+}
+
+.primary-button:hover {
+    background: rgba(33, 150, 243, .2);
+    background: radial-gradient(circle, rgba(81, 81, 81, 1) 0%, rgba(32, 32, 32, 1) 100%);
+}
+
+.button-form {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #EFDB6C 0%, #FFC107 100%);
+    color: black;
+    text-transform: uppercase;
+    padding: 20px 35px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 100px;
+    display: inline-block;
+    position: relative;
+    line-height: 100%;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .45s;
+    vertical-align: middle;
+}
+
+
+/* Tarjetas con imagen de fondo y capa con opacidad y color */
+.card {
+    box-shadow: 0 2px 45px 0 rgba(0,0,0,.16);
+}
+.card-bg-img-fiscal:hover {
+    color: white;
+    background-image: url("../img/img-bg-fiscal.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-bg-img-contable:hover {
+    color: white;
+    background-image: url("../img/img-bg-contable.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-bg-img-laboral:hover {
+    color: white;
+    background-image: url("../img/img-bg-laboral.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-bg-img-juridico:hover {
+    color: white;
+    background-image: url("../img/img-bg-juridico.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.effect-color-layer {
+    fill: #2a46fe;
+}
+.effect-color-layer:hover {
+    background-color: #0258fc;
+    height: 100%;
+    opacity: 0.6;
+    fill: white;
+}
+
+.card-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 19px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Imagenes con animación */
+.img-sobre-nosotros {
+    animation-name: MoveImageLeftRight;
+    animation-direction: normal;
+    position: relative;
+    box-shadow: 0 3px 45px 0 rgba(0,0,0,.16);
+        transition: all .3s ease-out;
+}
+
+@keyframes MoveImageLeftRight {
+    from {
+        opacity: 0;
+        left: 0px;
+    }
+    to {
+        opacity: 1;
+        left: 100px;
+    }
+}
+
+
+
+/* Colores de las Sectiones */
+.section-sobre-nosotros {
+    background-color: #f9f9f9;
+}
+
+
+/* Sección Precios */
+.section-prices {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('../img/section-prices.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.overlay-section-prices {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparencia oscura */
+    z-index: 1;
+}
+
+.title-super {
+    position: relative;
     z-index: 2;
-    transform: translate(-50%, -50%);
+    padding-bottom: 50px;
     text-align: center;
 }
 
 
-/* Footer */
-footer {
-    background-color: #2C3E50;
+.card-prices {
+    position: relative;
+    z-index: 2;
+    display: flex; /* Esto hará que las columnas dentro de la tarjeta estén en horizontal */
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mejorar legibilidad */
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto elevado */
+    overflow: hidden;
+    gap: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.link-services-footer {
-    color: white;
-    text-decoration: none;
+.title-price {
+    color: #2a46fe;
 }
-.link-services-footer:hover {
-    color: #38B6FF;
-}
-
-
-.footer2 {
-    background-color: #212F3D;
-    color: grey;
+.col-card-prices {
+    flex: 1;  /* Esto asegura que cada columna tome el mismo espacio horizontalmente */
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 
-/* Título en azul de las páginas de cada servicio */
-.color-title-service {
-    color: #38B6FF;
+.pide-cita {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card-form {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #24a7ff 0%, #2a46fe 100%);
+    color: #fff;
+    padding: 20px 35px;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    line-height: 100%;
+    z-index: 1;
+    vertical-align: middle;
 }
 
 
-.section-contact {
-    background-color: #2C3E50;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Linea de separación con el icono del banco entre medias */
+    .bg-color-separator {
+        background-color: #2C3E50;
+    }
+
+
+    .hr-droid {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hr-line {
+        width: 10%;
+        position: relative;
+        margin: 10px;
+        border-bottom: 2px solid;
+    }
+
+    .left-line {
+        border-color: white;
+    }
+
+    .right-line {
+        border-color: white;
+    }
+
+
+    /* Color de los enlaces de cada servicio */
+    .link-services {
+        color: black;
+        text-decoration: none;
+    }
+
+    .link-services:hover {
+        color: #38B6FF;
+    }
+
+
+    /* CSS de los banners de las distintas páginas con el título por encima de la imagen */
+    .fiscal-banner {
+        background-image: url('../img/img-fiscal.jpg');
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(60%);
+    }
+
+    .contable-banner {
+        background-image: url('../img/img-contable.jpg');
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(60%);
+    }
+
+    .laboral-banner {
+        background-image: url('../img/img-laboral.jpg');
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(60%);
+    }
+
+    .juridica-banner {
+        background-image: url('../img/img-juridica.jpg');
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(60%);
+    }
+
+    /* Título de los distintios banners */
+    .title-service {
+        margin: auto;
+        width: 95%;
+        padding: 10px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        color: white;
+        text-shadow: 1px 1px #283747;
+        font-size: 50px;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+    /* Footer */
+    footer {
+        background-color: #2C3E50;
+    }
+
+    .link-services-footer {
+        color: white;
+        text-decoration: none;
+    }
+
+    .link-services-footer:hover {
+        color: #38B6FF;
+    }
+
+
+    .footer2 {
+        background-color: #212F3D;
+        color: grey;
+    }
+
+
+    /* Título en azul de las páginas de cada servicio */
+    .color-title-service {
+        color: #38B6FF;
+    }
+
+
+    .section-contact {
+        background-color: #2C3E50;
+    }
+
+
+    /* Animación de imágenes y título de servicios */
+    .img-paper-texture {
+        background-image: url('../img/paper-texture.jpg');
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .effect-curve-paper {
+        position: relative;
+        animation: MyDiv;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-direction: normal;
+    }
+
+    @keyframes MyDiv {
+        100% {
+            left: -100px;
+            top: 0px;
+        }
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    .service-title {
+        margin: auto;
+        width: 95%;
+        padding: 10px;
+        position: absolute;
+        top: 55%;
+        right: -5%;
+        color: black;
+        font-weight: bold;
+        font-size: 35px;
+        text-shadow: 1px 1px #283747;
+        z-index: 3;
+    }
+
+    .service-title-animation {
+        position: relative;
+        animation: TitleAnimation;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-direction: normal;
+    }
+
+    @keyframes TitleAnimation {
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+        100% {
+            left: -100px;
+            top: 0px;
+        }
+    }
+
+
